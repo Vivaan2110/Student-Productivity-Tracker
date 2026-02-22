@@ -15,10 +15,10 @@ MODELDIR=Path('models') # Folder to save embeddings
 MODELDIR.mkdir(parents=True,exist_ok=True)
 
 
-ENROLL_SECONDS=20 # Seconds at the start if the video used to enrol faces
-FRAME_SKIP=3 # Samples every 3rd frame
-DBSCAN_EPS=0.55
-DBSCAN_MIN=8
+ENROLL_SECONDS=40 # Seconds at the start if the video used to enrol faces
+FRAME_SKIP=1 # Samples every 3rd frame
+DBSCAN_EPS=0.45
+DBSCAN_MIN=15
 
 
 DEVICE='mps' if torch.backends.mps.is_built() else 'cpu' # use apples hardware acceleration if available
